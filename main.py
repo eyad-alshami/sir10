@@ -161,13 +161,13 @@ class Mt_Spiders:
 
 
     def collect_projects(self):
-    	with open("names.txt", "r") as f:
-    		for l in f:
-    			print l
-        return self.in_paralell(self.get_pages_urls(3, 4), self.get_projects_urls_on_page, 8)
+        return self.in_paralell(self.get_pages_urls(3, 50), self.get_projects_urls_on_page, 8)
 
 
 if __name__ == '__main__':
+	print
+	print
+	print "________________****************____________________"
     s = time.time()
     r = Mt_Spiders().collect_projects()
     print len(r)
