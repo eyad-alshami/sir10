@@ -161,7 +161,7 @@ class Mt_Spiders:
 
 
     def collect_projects(self):
-        return self.in_paralell(self.get_pages_urls(30, 40), self.get_projects_urls_on_page, 8)
+        return self.in_paralell(self.get_pages_urls(1, 4), self.get_projects_urls_on_page, 8)
 
 
 if __name__ == '__main__':
