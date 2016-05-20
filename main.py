@@ -161,22 +161,22 @@ class Mt_Spiders:
 
 
     def collect_projects(self):
-        return self.in_paralell(self.get_pages_urls(1, 201), self.get_projects_urls_on_page, 16)
+        return self.in_paralell(self.get_pages_urls(1, 2), self.get_projects_urls_on_page, 16)
 
 
 if __name__ == '__main__':
-	print "_______________******__________________"
     s = time.time()
-    r = Mt_Spiders().collect_projects()    
+    r = Mt_Spiders().collect_projects()
+    print len(r)
+    print "_______________******__________________"
     print ('It took:  ', time.time() - s)
-    print "***************************************"
 
     # s = time.time()
     # fieldsnames = ['UPDATE_URL', 'NAME', 'FINISH_DATE', 'PROJECT_URL', 'DURATION', 'LAUNCH_DATE', 'GOAL']
     # with open("projects.csv", "wb") as f:
-    #    writer = csv.DictWriter(f, fieldnames=fieldsnames)
-    #    writer.writeheader()
-    #    for project in r:
-    #        writer.writerow(project)
-
-    #print ('It took:  ', time.time() - s)
+    #     writer = csv.DictWriter(f, fieldnames=fieldsnames)
+    #     writer.writeheader()
+    #     for project in r:
+    #         writer.writerow(project)
+    #
+    # print ('It took:  ', time.time() - s)
