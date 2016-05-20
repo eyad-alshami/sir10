@@ -165,14 +165,15 @@ class Mt_Spiders:
 
 
 if __name__ == '__main__':
-	print
-	print
-	print "________________****************____________________"
+    print
+    print
+    print "__________****************_____________"
     s = time.time()
     r = Mt_Spiders().collect_projects()
-    print len(r)
-    print "_______________******__________________"
+    print len(r),"pages has been scraped"
     print ('It took:  ', time.time() - s)
+    print "_______________******__________________"
+
 
     # s = time.time()
     # fieldsnames = ['UPDATE_URL', 'NAME', 'FINISH_DATE', 'PROJECT_URL', 'DURATION', 'LAUNCH_DATE', 'GOAL']
