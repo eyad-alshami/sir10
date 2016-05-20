@@ -161,7 +161,7 @@ class Mt_Spiders:
 
 
     def collect_projects(self):
-    	with open("names.txt", r) as f:
+    	with open("names.txt", "r") as f:
     		for l in f:
     			print l
         return self.in_paralell(self.get_pages_urls(3, 4), self.get_projects_urls_on_page, 8)
