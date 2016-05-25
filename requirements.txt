@@ -1,2 +1,2 @@
 psycopg2==2.6.1
-
+graphlab==2.2.3
