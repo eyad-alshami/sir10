@@ -1,1 +1,1 @@
-web: python main.py --log-file -
+web: python postgres_test.py --log-file -
