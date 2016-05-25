@@ -16,5 +16,5 @@ conn = psycopg2.connect(
 
 cur = conn.cursor()
 cur.execute('SELECT version()')          
-    ver = cur.fetchone()
-    print ver  
+ver = cur.fetchone()
+print ver  
